@@ -1,193 +1,154 @@
 <!DOCTYPE html>
 <html lang="it">
 <!-- Esercizio di Stella Zanichelli 3F 14/03/20 -->
+
 <head>
-<title>esercizio_vacanza_hobby</title>
-<meta charset="utf-8">
-<!-- definisco lo stile dei vari elementi -->
-<style>
-body {background-color: lightgray;}
-h1   {
-	text-align:center;
-	color: blue;
-	outline: 5px solid lightblue;
-}
-h2   {color: red;}
-p    {text-align:justify;}
-h3   {color: dodgerblue;}
-h4   {font-size: 150%;}
-img  {width: 50%;}
-ol   {color: green;}
-table{
-	width: 100%;
-	text-align:center;
-	border-collapse: collapse;
-}
-table, th, td {border: 1px solid black;}
-th {background-color: gray;}
-</style>
+  <title>esercizio_vacanza_hobby</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- aggiungo librerie necessarie per bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  
+  <!-- definisco lo stile dei vari elementi -->
+  <style>
+    body {background-color: lightgray;}
+    h1   {
+  	 text-align:center;
+  	 color: blue;
+  	 outline: 5px solid lightblue;
+    }
+    h2   {color: red;}
+    p    {text-align:justify;}
+    h3   {color: dodgerblue;}
+    h4   {font-size: 150%;}
+    img  {width: 100%;}
+    ol   {color: green;}
+    ul   {
+      width: 50%;
+      color: green;
+    }
+    table{
+  	 width: 100%;
+  	 text-align:center;
+     border: 3px solid black;
+    }
+  </style>
 </head>
 
 <body>
+  <div class="container">
+    
+    <!-- Intestazioni diverse -->
+    <h1>Londra</h1>
+    <h2>Un viaggio nella capitale</h2>
 
-<!-- Intestazioni diverse -->
-<h1>Londra</h1>
-<h2>Un viaggio nella capitale</h2>
+    <!-- Paragrafo Lorem Ipsum -->
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut eleifend odio, sit amet pellentesque purus. Pellentesque feugiat faucibus neque. Nullam id nisl diam. Nulla at velit at sapien placerat aliquam nec in ligula. Duis dapibus egestas tortor. Sed quam est, venenatis a fermentum in, lacinia ac nunc. Suspendisse augue lacus, bibendum a accumsan vel, sagittis in libero. Nulla facilisi.<mark> Morbi eget tempus magna.</mark> Aenean fringilla justo sed tempor condimentum. </p>
 
-<!-- Paragrafo Lorem Ipsum -->
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut eleifend odio, sit amet pellentesque purus. Pellentesque feugiat faucibus neque. Nullam id nisl diam. Nulla at velit at sapien placerat aliquam nec in ligula. Duis dapibus egestas tortor. Sed quam est, venenatis a fermentum in, lacinia ac nunc. Suspendisse augue lacus, bibendum a accumsan vel, sagittis in libero. Nulla facilisi. Morbi eget tempus magna. Aenean fringilla justo sed tempor condimentum. </p>
+    <!-- Liste con titolo -->
+    <h3>Cosa visitare:</h3>
+    <ol type="I">
+    	<li>Big Bang</li>
+    	<li>London Eye</li>
+    	<li>Tower Bridge</li>
+    	<li>Buckingham Palace</li>
+    	<li>British Museum</li>
+    	<li>Hyde Park</li>
+    </ol>
 
-<!-- Immagine a destra del testo -->
-<img src="https://www.viaggi-brevi.com/wp-content/uploads/2018/08/londra.jpg" title="Foto di Londra" alt="immagine non disponibile" align=right>
+    <h3>Cosa fare:</h3>
+    <ul class="list-group list-group-flush">
+    	<li class="list-group-item">Shopping al grande magazzino Harrods</li>
+    	<li class="list-group-item">Giro in barca sul Tamigi</li>
+    	<li class="list-group-item">Foto alla Platform 9¾ a King's Cross.</li>
+    </ul>
 
-<!-- Liste con titolo -->
-<h3>Cosa visitare:</h3>
-<ol type="I">
-	<li>Big Bang</li>
-	<li>London Eye</li>
-	<li>Tower Bridge</li>
-	<li>Buckingham Palace</li>
-	<li>British Museum</li>
-	<li>Hyde Park</li>
-</ol>
+    <!-- 3 foto in griglia -->
+    <div class="row">
+      <div class="col"><img src="https://www.viaggi-brevi.com/wp-content/uploads/2018/08/londra.jpg" title="Foto di Londra" class="img-thumbnail" alt="immagine non disponibile"></div>
+      <div class="col"><img src="https://www.myenglishschool.it/magazine/wp-content/uploads/2016/10/Vita-a-Londra-1.jpg" title="Foto di Londra notturna" class="rounded" alt="immagine non disponibile"></div>
+      <div class="col"><img src="https://upload.wikimedia.org/wikipedia/commons/1/13/Buckingham_Palace_from_gardens%2C_London%2C_UK_-_Diliff_%28cropped%29.jpg" title="Foto di Buckingham Palace" alt="immagine non disponibile"></div>
+    </div> 
 
-<h3>Cosa fare:</h3>
-<ol type="a">
-	<li>Shopping al grande magazzino Harrods</li>
-	<li>Giro in barca sul Tamigi</li>
-	<li>Foto alla Platform 9¾ a King's Cross.</li>
-</ol>
+    <!-- Info tabella -->
+    <h4>Bisogna però fare attenzione in questo periodo!</h4>
+    <p>Qui sotto puoi trovare una tabella dedicata ai casi del Covid-19 nello UK (14/03/20)</p>
 
-<!-- Info tabella -->
-<h4>Bisogna però fare attenzione in questo periodo!</h4>
-<p>Qui sotto puoi trovare una tabella dedicata ai casi del Covid-19 nello UK (14/03/20)</p>
+    <!-- Tabella -->
+    <table class="table table-dark table-striped">
+      <thead>
+      <tr>
+        <th>Data</th><th>Numero contagiati</th><th>Numero morti</th><th>Numero guariti</th>
+      </tr> </thead> <tbody> <tr>
+        <td>15/02/20</td><td>9</td><td>0</td><td>0</td>
+      </tr>  <tr>
+        <td>23/02/20</td><td>13</td><td>0</td><td>8</td>
+      </tr>  <tr>
+        <td>27/02/20</td><td>16</td><td>0</td><td>8</td>
+      </tr>  <tr>
+        <td>28/02/20</td><td>20</td><td>0</td><td>8</td>
+      </tr>  <tr>
+        <td>29/02/20</td><td>23</td><td>0</td><td>8</td>
+      </tr>  <tr>
+        <td>01/03/20</td><td>36</td><td>0</td><td>8</td>
+      </tr>  <tr>
+        <td>02/03/20</td><td>39</td><td>0</td><td>8</td>
+      </tr>  <tr>
+        <td>03/03/20</td><td>51</td><td>0</td><td>8</td>
+      </tr>  <tr>
+        <td>04/03/20</td><td>87</td><td>0</td><td>8</td>
+      </tr>  <tr>
+        <td>05/03/20</td><td>116</td><td>1</td><td>18</td>
+      </tr>  <tr>
+        <td>06/03/20</td><td>164</td><td>2</td><td>18</td>
+      </tr>  <tr>
+        <td>07/03/20</td><td>209</td><td>2</td><td>18</td>
+      </tr>  <tr>
+        <td>08/03/20</td><td>278</td><td>3</td><td>18</td>
+      </tr>  <tr>
+        <td>09/03/20</td><td>321</td><td>5</td><td>18</td>
+      </tr>  <tr>
+        <td>10/03/20</td><td>383</td><td>6</td><td>18</td>
+      </tr>  <tr>
+        <td>11/03/20</td><td>460</td><td>8</td><td>18</td>
+      </tr>  <tr>
+        <td>12/03/20</td><td>590</td><td>10</td><td>18</td>
+      </tr>  <tr>
+        <td>13/03/20</td><td>798</td><td>11</td><td>18</td>
+      </tr> <tr>
+        <td>14/03/20</td><td>1140</td><td>21</td><td>18</td>
+      </tr> </tbody>
+    </table> 
 
-<!-- Tabella -->
-<table>
-  <tr>
-    <th>Data</th>
-    <th>Numero contagiati</th>
-    <th>Numero morti</th>
-    <th>Numero guariti</th>
-  </tr>  <tr>
-    <td>15/02/20</td>
-    <td>9</td>
-    <td>0</td>
-    <td>0</td>
-  </tr>  <tr>
-    <td>23/02/20</td>
-    <td>13</td>
-    <td>0</td>
-    <td>8</td>
-  </tr>  <tr>
-    <td>27/02/20</td>
-    <td>16</td>
-    <td>0</td>
-    <td>8</td>
-  </tr>  <tr>
-    <td>28/02/20</td>
-    <td>20</td>
-    <td>0</td>
-    <td>8</td>
-  </tr>  <tr>
-    <td>29/02/20</td>
-    <td>23</td>
-    <td>0</td>
-    <td>8</td>
-  </tr>  <tr>
-    <td>01/03/20</td>
-    <td>36</td>
-    <td>0</td>
-    <td>8</td>
-  </tr>  <tr>
-    <td>02/03/20</td>
-    <td>39</td>
-    <td>0</td>
-    <td>8</td>
-  </tr>  <tr>
-    <td>03/03/20</td>
-    <td>51</td>
-    <td>0</td>
-    <td>8</td>
-  </tr>  <tr>
-    <td>04/03/20</td>
-    <td>87</td>
-    <td>0</td>
-    <td>8</td>
-  </tr>  <tr>
-    <td>05/03/20</td>
-    <td>116</td>
-    <td>1</td>
-    <td>18</td>
-  </tr>  <tr>
-    <td>06/03/20</td>
-    <td>164</td>
-    <td>2</td>
-    <td>18</td>
-  </tr>  <tr>
-    <td>07/03/20</td>
-    <td>209</td>
-    <td>2</td>
-    <td>18</td>
-  </tr>  <tr>
-    <td>08/03/20</td>
-    <td>278</td>
-    <td>3</td>
-    <td>18</td>
-  </tr>  <tr>
-    <td>09/03/20</td>
-    <td>321</td>
-    <td>5</td>
-    <td>18</td>
-  </tr>  <tr>
-    <td>10/03/20</td>
-    <td>383</td>
-    <td>6</td>
-    <td>18</td>
-  </tr>  <tr>
-    <td>11/03/20</td>
-    <td>460</td>
-    <td>8</td>
-    <td>18</td>
-  </tr>  <tr>
-    <td>12/03/20</td>
-    <td>590</td>
-    <td>10</td>
-    <td>18</td>
-  </tr>  <tr>
-    <td>13/03/20</td>
-    <td>798</td>
-    <td>11</td>
-    <td>18</td>
-  </tr> <tr>
-    <td>14/03/20</td>
-    <td>1140</td>
-    <td>21</td>
-    <td>18</td>
-  </tr> 
-</table> 
+    <!-- Link ai dati statistici aggiornati -->
+    <a href="https://www.worldometers.info/coronavirus/country/uk/">Clicca qui per vedere i dati aggiornati in qualsiasi momento</a>
+    <br>
+    <br>
 
-<!-- Link ai dati statistici aggiornati -->
-<a href="https://www.worldometers.info/coronavirus/country/uk/">Clicca qui per vedere i dati aggiornati in qualsiasi momento</a>
+    <!-- Intestazioni diverse -->
+    <h1>Origami</h1>
+    <h2>Un hobby sottovalutato</h2>
+    <!-- Paragrafo Lorem Ipsum -->
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec commodo urna et erat fringilla, eget tempor ligula aliquam. Maecenas gravida varius tristique. Sed feugiat velit sit amet accumsan congue. Duis faucibus tempor lobortis. Nullam at feugiat augue. Donec a suscipit ligula. Mauris nisl ante, pulvinar a dictum congue, <mark>tempus nec odio.</mark></p>
 
+    <!-- Link ad un sito di origami -->
+    <a href="https://www.cosepercrescere.it/tag/origami-facili/">Clicca qui per trovare tanti origami semplici da fare</a>
+    <br>
+    <br>
 
+    <!-- 3 foto in griglia -->
+    <div class="row">
+      <div class="col"><img src="https://i.ytimg.com/vi/zCrlA5hX25k/maxresdefault.jpg" title="Esempio di origami" alt="immagine non disponibile"></div>
+      <div class="col"><img src="https://www.appletree.it/wp-content/uploads/2015/01/origami-fafalla-progetti-in-inglese-per-bambini-1.jpg" title="Esempio di origami" alt="immagine non disponibile"></div>
+      <div class="col"><img src="https://www.maxxi.art/wp-content/uploads/2016/12/maxresdefault.jpg" title="Esempio di origami" alt="immagine non disponibile"></div>
+    </div>
+    <br>
 
-<!-- Intestazioni diverse -->
-<h1>Origami</h1>
-<h2>Un hobby sottovalutato</h2>
-<!-- Paragrafo Lorem Ipsum -->
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec commodo urna et erat fringilla, eget tempor ligula aliquam. Maecenas gravida varius tristique. Sed feugiat velit sit amet accumsan congue. Duis faucibus tempor lobortis. Nullam at feugiat augue. Donec a suscipit ligula. Mauris nisl ante, pulvinar a dictum congue, tempus nec odio.</p>
-
-<!-- Link ad un sito di origami -->
-<a href="https://www.cosepercrescere.it/tag/origami-facili/">Clicca qui per trovare tanti origami semplici da fare</a>
-<br>
-<br>
-
-<!-- Immagine centrata -->
-<center>
-<img src="https://i.ytimg.com/vi/zCrlA5hX25k/maxresdefault.jpg" title="Esempio di origami" alt="Immagine non disponibile">
-</center>
-
+  </div>
 </body>
 </html>
 
