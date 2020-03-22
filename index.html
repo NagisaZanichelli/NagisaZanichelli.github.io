@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="it">
-<!-- Esercizio di Stella Zanichelli 3F 14/03/20 -->
+<!-- Esercizio di Stella Zanichelli 3F 22/03/20 -->
 
 <head>
-  <title>esercizio_vacanza_hobby</title>
+  <title>Prova pagina web</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
@@ -43,13 +43,14 @@
   <div class="container">
     
     <!-- Intestazioni diverse -->
+    <br>
     <h1>Londra</h1>
     <h2>Un viaggio nella capitale</h2>
 
     <!-- Paragrafo Lorem Ipsum -->
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut eleifend odio, sit amet pellentesque purus. Pellentesque feugiat faucibus neque. Nullam id nisl diam. Nulla at velit at sapien placerat aliquam nec in ligula. Duis dapibus egestas tortor. Sed quam est, venenatis a fermentum in, lacinia ac nunc. Suspendisse augue lacus, bibendum a accumsan vel, sagittis in libero. Nulla facilisi.<mark> Morbi eget tempus magna.</mark> Aenean fringilla justo sed tempor condimentum. </p>
 
-    <!-- Liste con titolo -->
+    <!-- Lista con titolo -->
     <h3>Cosa visitare:</h3>
     <ol type="I">
     	<li>Big Bang</li>
@@ -60,6 +61,7 @@
     	<li>Hyde Park</li>
     </ol>
 
+    <!-- List-group con titolo -->
     <h3>Cosa fare:</h3>
     <ul class="list-group list-group-flush">
     	<li class="list-group-item">Shopping al grande magazzino Harrods</li>
@@ -76,56 +78,59 @@
 
     <!-- Info tabella -->
     <h4>Bisogna però fare attenzione in questo periodo!</h4>
-    <p>Qui sotto puoi trovare una tabella dedicata ai casi del Covid-19 nello UK (14/03/20)</p>
+    <!-- Bottne per tabella -->
+    <button data-toggle="collapse" data-target="#demo"><p>Cliccami per trovare una tabella dedicata ai casi del Covid-19 nello UK (14/03/20)</p></button>
+    <div id="demo" class="collapse"> 
+      <!-- Tabella -->
+      <table class="table table-dark table-striped">
+        <thead>
+        <tr>
+          <th>Data</th><th>Numero contagiati</th><th>Numero morti</th><th>Numero guariti</th>
+        </tr> </thead> <tbody> <tr>
+          <td>15/02/20</td><td>9</td><td>0</td><td>0</td>
+        </tr>  <tr>
+          <td>23/02/20</td><td>13</td><td>0</td><td>8</td>
+        </tr>  <tr>
+          <td>27/02/20</td><td>16</td><td>0</td><td>8</td>
+        </tr>  <tr>
+          <td>28/02/20</td><td>20</td><td>0</td><td>8</td>
+        </tr>  <tr>
+          <td>29/02/20</td><td>23</td><td>0</td><td>8</td>
+        </tr>  <tr>
+          <td>01/03/20</td><td>36</td><td>0</td><td>8</td>
+        </tr>  <tr>
+          <td>02/03/20</td><td>39</td><td>0</td><td>8</td>
+        </tr>  <tr>
+          <td>03/03/20</td><td>51</td><td>0</td><td>8</td>
+        </tr>  <tr>
+          <td>04/03/20</td><td>87</td><td>0</td><td>8</td>
+        </tr>  <tr>
+          <td>05/03/20</td><td>116</td><td>1</td><td>18</td>
+        </tr>  <tr>
+          <td>06/03/20</td><td>164</td><td>2</td><td>18</td>
+        </tr>  <tr>
+          <td>07/03/20</td><td>209</td><td>2</td><td>18</td>
+        </tr>  <tr>
+          <td>08/03/20</td><td>278</td><td>3</td><td>18</td>
+        </tr>  <tr>
+          <td>09/03/20</td><td>321</td><td>5</td><td>18</td>
+        </tr>  <tr>
+          <td>10/03/20</td><td>383</td><td>6</td><td>18</td>
+        </tr>  <tr>
+          <td>11/03/20</td><td>460</td><td>8</td><td>18</td>
+        </tr>  <tr>
+          <td>12/03/20</td><td>590</td><td>10</td><td>18</td>
+        </tr>  <tr>
+          <td>13/03/20</td><td>798</td><td>11</td><td>18</td>
+        </tr> <tr>
+          <td>14/03/20</td><td>1140</td><td>21</td><td>18</td>
+        </tr> </tbody>
+      </table>
 
-    <!-- Tabella -->
-    <table class="table table-dark table-striped">
-      <thead>
-      <tr>
-        <th>Data</th><th>Numero contagiati</th><th>Numero morti</th><th>Numero guariti</th>
-      </tr> </thead> <tbody> <tr>
-        <td>15/02/20</td><td>9</td><td>0</td><td>0</td>
-      </tr>  <tr>
-        <td>23/02/20</td><td>13</td><td>0</td><td>8</td>
-      </tr>  <tr>
-        <td>27/02/20</td><td>16</td><td>0</td><td>8</td>
-      </tr>  <tr>
-        <td>28/02/20</td><td>20</td><td>0</td><td>8</td>
-      </tr>  <tr>
-        <td>29/02/20</td><td>23</td><td>0</td><td>8</td>
-      </tr>  <tr>
-        <td>01/03/20</td><td>36</td><td>0</td><td>8</td>
-      </tr>  <tr>
-        <td>02/03/20</td><td>39</td><td>0</td><td>8</td>
-      </tr>  <tr>
-        <td>03/03/20</td><td>51</td><td>0</td><td>8</td>
-      </tr>  <tr>
-        <td>04/03/20</td><td>87</td><td>0</td><td>8</td>
-      </tr>  <tr>
-        <td>05/03/20</td><td>116</td><td>1</td><td>18</td>
-      </tr>  <tr>
-        <td>06/03/20</td><td>164</td><td>2</td><td>18</td>
-      </tr>  <tr>
-        <td>07/03/20</td><td>209</td><td>2</td><td>18</td>
-      </tr>  <tr>
-        <td>08/03/20</td><td>278</td><td>3</td><td>18</td>
-      </tr>  <tr>
-        <td>09/03/20</td><td>321</td><td>5</td><td>18</td>
-      </tr>  <tr>
-        <td>10/03/20</td><td>383</td><td>6</td><td>18</td>
-      </tr>  <tr>
-        <td>11/03/20</td><td>460</td><td>8</td><td>18</td>
-      </tr>  <tr>
-        <td>12/03/20</td><td>590</td><td>10</td><td>18</td>
-      </tr>  <tr>
-        <td>13/03/20</td><td>798</td><td>11</td><td>18</td>
-      </tr> <tr>
-        <td>14/03/20</td><td>1140</td><td>21</td><td>18</td>
-      </tr> </tbody>
-    </table> 
+      <!-- Link ai dati statistici aggiornati -->
+      <a href="https://www.worldometers.info/coronavirus/country/uk/">Clicca qui per vedere i dati aggiornati in qualsiasi momento</a>
+    </div> 
 
-    <!-- Link ai dati statistici aggiornati -->
-    <a href="https://www.worldometers.info/coronavirus/country/uk/">Clicca qui per vedere i dati aggiornati in qualsiasi momento</a>
     <br>
     <br>
 
