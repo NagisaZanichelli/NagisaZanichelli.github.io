@@ -17,37 +17,37 @@
 
 <body>
   <div class="container">
-
-  <form action="/action_page.php">
-    
-    <div class="form-group">
-      <label for="nome">Nome:</label>
-      <input type="nome" class="form-control" placeholder="Inserire nome" id="nome">
-    </div>
-    
-    <div class="form-group">
-      <label for="età">Età:</label>
-      <input type="età" class="form-control" placeholder="Inserire età" id="età">
-    </div>
-    
-    <div class="form-group">
-      <label for="città">Città:</label>
-      <input type="città" class="form-control" placeholder="Inserire la città di nascita" id="città">
-    </div>
-
-    <button onclick="myFunction()">Premimi!</button>
-    <p id="demo"></p>
-    <script>
-      function myFunction() {
-        var nome = document.getElementById("nome").value;
-        var età = document.getElementById("età").value;
-        var città = document.getElementById("città").value;
-        document.getElementById("demo").innerHTML = "Ciao " + nome + "! Hai " + età + " anni e sei nato/a a " + città + ".";
-      }
-    </script>
-  </form> 
-
+    <form action="/action_page.php">
+      <div class="form-group">
+        <label for="name">Nome:</label>
+        <input type="text" class="form-control" id="nome" placeholder="Inserisci nome">
+      </div>
+      <div class="form-group">
+        <label for="age">Età:</label>
+        <input type="text" class="form-control" id="età" placeholder="Inserisci età">
+      </div>
+      <div class="form-group">
+        <label for="city">Città:</label>
+        <input type="text" class="form-control" id="città" placeholder="Inserisci la città di nascita">
+      </div>
+      <button type="button" onclick="myFunction()" class="btn btn-primary">Premimi!</button>
+    </form>
+    <p id="output"></p> 
   </div>
+
+  <script>
+    function myFunction(){
+      var name = document.getElementById("nome");
+      var current_name = name.value;
+      var age = document.getElementById("età");
+      var current_age = age.value;
+      var city = document.getElementById("città");
+      var current_city = city.value;
+
+      document.getElementById("output").innerHTML = "Ciao " + current_name + "! Hai " + current_age + " anni e sei nato a " + current_city +".";
+    }
+  </script>
+  
 </body>
 </html>
 
