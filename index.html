@@ -17,34 +17,36 @@
 
 <body>
   <div class="container">
+    <!-- creo form -->
     <form action="/action_page.php">
       <div class="form-group">
         <label for="name">Nome:</label>
-        <input type="text" class="form-control" id="nome" placeholder="Inserisci nome">
+        <input type="text" class="form-control" id="name" placeholder="Inserisci nome">
       </div>
       <div class="form-group">
         <label for="age">Età:</label>
-        <input type="text" class="form-control" id="età" placeholder="Inserisci età">
+        <input type="text" class="form-control" id="age" placeholder="Inserisci età">
       </div>
       <div class="form-group">
         <label for="city">Città:</label>
-        <input type="text" class="form-control" id="città" placeholder="Inserisci la città di nascita">
+        <input type="text" class="form-control" id="city" placeholder="Inserisci la città di nascita">
       </div>
-      <button type="button" onclick="myFunction()" class="btn btn-primary">Premimi!</button>
+      <button type="button" onclick="prova()" class="btn btn-primary">Premimi!</button>
     </form>
     <p id="output"></p> 
   </div>
 
   <script>
-    function myFunction(){
-      var name = document.getElementById("nome");
-      var current_name = name.value;
-      var age = document.getElementById("età");
-      var current_age = age.value;
-      var city = document.getElementById("città");
-      var current_city = city.value;
+    <!-- definisco la funzione -->
+    function prova(){
+      var name = document.getElementById("name");
+      var name = name.value;
+      var age = document.getElementById("age");
+      var age = age.value;
+      var city = document.getElementById("city");
+      var city = city.value;
 
-      document.getElementById("output").innerHTML = "Ciao " + current_name + "! Hai " + current_age + " anni e sei nato a " + current_city +".";
+      document.getElementById("output").innerHTML = "Ciao " + name + "! Hai " + age + " anni e sei nato a " + city +".";
     }
   </script>
   
