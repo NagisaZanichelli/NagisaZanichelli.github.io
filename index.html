@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="it">
-<!-- Esercizio di Stella Zanichelli 3F 01/06/20 -->
+<!--  sito rapidmatic -->
 
 <head>
-  <title>Prova pagina web</title>
+  <title>Rapidmatic</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
@@ -17,38 +17,23 @@
 
 <body>
   <div class="container">
-    <!-- creo form -->
-    <form action="/action_page.php">
-      <div class="form-group">
-        <label for="name">Nome:</label>
-        <input type="text" class="form-control" id="name" placeholder="Inserisci nome">
-      </div>
-      <div class="form-group">
-        <label for="age">Età:</label>
-        <input type="text" class="form-control" id="age" placeholder="Inserisci età">
-      </div>
-      <div class="form-group">
-        <label for="city">Città:</label>
-        <input type="text" class="form-control" id="city" placeholder="Inserisci la città di nascita">
-      </div>
-      <button type="button" onclick="prova()" class="btn btn-primary">Premimi!</button>
-    </form>
-    <p id="output"></p> 
+    
+    <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">WebSiteName</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Home</a></li>
+      <li><a href="#">Page 1</a></li>
+      <li><a href="#">Page 2</a></li>
+      <li><a href="#">Page 3</a></li>
+    </ul>
   </div>
-
-  <script>
-    <!-- definisco la funzione -->
-    function prova(){
-      var name = document.getElementById("name");
-      var name = name.value;
-      var age = document.getElementById("age");
-      var age = age.value;
-      var city = document.getElementById("city");
-      var city = city.value;
-
-      document.getElementById("output").innerHTML = "Ciao " + name + "! Hai " + age + " anni e sei nato a " + city +".";
-    }
-  </script>
+</nav>
+    
+    
+  </div>
   
 </body>
 </html>
